@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form homework</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main class="main" id="main">
+        <section class="wrapper">
+            <container class="main__datos">
+                <h1>Get in touch with us
+                </h1>
+                <h2>Write to us, we would like to help you!
+                </h2>
+                <form class="main__form" id="form">
+                    <label class="main__label" for="name">Name<Span class = "red"> * </span></label>
+                    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="John Doe" id="name" />
+                    <label class="main__label" for="email">Email<Span class = "red"> * </span></label>
+                    <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="email" placeholder="test@gmail.com" />
+                </form>
+            </container>
+            <container class="main__empresa">
+                <h2>Write to us, we would like to help you!
+                </h2>
+            </container>
+            <container class="main__send">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                <input type="submit" value="SEND" class="button-blue"/>
+            </container>
+        </section>
+    </main>>
+</body>
+</html>
